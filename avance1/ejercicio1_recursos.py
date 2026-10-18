@@ -1,8 +1,8 @@
 # ============================================================
 # Archivo: ejercicio1_recursos.py
 # Curso: SOFT-01 Principios de Programación 1 - Sección SCP0
-# Integrantes: [Nombre Apellido 1], [Nombre Apellido 2], [Nombre Apellido 3]
-# Fecha: 18/10/2026 Versión: 1.0
+# Integrantes: Jorge Alfaro Vargas, Jonathan Jimenez Carmona, Mariana Chacón Quirós
+# Fecha: 15/10/2026 Versión: 1.0
 # Descripción: Calcula los recursos necesarios para una misión.
 # ============================================================
 
@@ -28,3 +28,15 @@ combustible_total = combustible_ida + combustible_regreso + RESERVA_COMBUSTIBLE#
 oxigeno_requerido = dias_viaje * tripulantes * CONSUMO_OXIGENO_TRIPULANTE_DIA + RESERVA_OXIGENO
 energia_requerida = dias_viaje * CONSUMO_ENERGIA_DIA + ENERGIA_EXPLORACION
 provisiones_requeridas = dias_viaje * tripulantes * CONSUMO_PROVISIONES_TRIPULANTE_DIA + RESERVA_PROVISIONES
+
+#Salida de datos ----------------------------------------------------------------------------------------------------------------------------
+print("Misión:", nombre_mision)
+print("Tripulantes:", tripulantes)
+print("Duración estimada hasta el destino:", dias_viaje, "días")
+print("Combustible para llegar:", combustible_ida, "unidades")
+print("Combustible para regresar:", combustible_regreso, "unidades")
+print("Reserva de combustible:", RESERVA_COMBUSTIBLE, "unidades")
+print("Combustible total requerido:", combustible_total, "unidades")
+print("Oxígeno requerido:", oxigeno_requerido, "unidades")
+print("Energía requerida:", energia_requerida, "unidades")
+print("Provisiones requeridas:", provisiones_requeridas, "unidades")
